@@ -1,0 +1,304 @@
+/* === Reset básico === */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* === Estilo global === */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+}
+
+/* === Cabeçalho === */
+.cabecalho {
+    background-color: #19354a;
+    color: #D0AC60;
+    text-align: center;
+    padding: 20px 0;
+}
+.cabecalho h1 {
+    font-size: 2rem;
+}
+
+/* === Menu === */
+.menu {
+    background-color: #00796b;
+}
+.menu ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 0.75rem 0;
+}
+.menu li a {
+    color: #D0AC60;
+    text-decoration: none;
+    font-weight: bold;
+    padding: 0.5rem 1rem;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+.menu li a:hover {
+    color: #fff;
+    background: rgba(255,255,255,0.1);
+    border-radius: 4px;
+}
+
+/* === Hero/Banner === */
+.hero {
+    position: relative;
+    display: flex;
+    align-items: center;    /* centraliza verticalmente */
+    justify-content: center;/* centraliza horizontalmente */
+    height: 350px;          /* ou min-height */
+    overflow: hidden;
+}
+.hero-texto {
+    position: relative;     /* não mais absolute */
+    color: #fff;
+    text-align: center;
+    text-shadow: 1px 1px 4px #000;
+}
+.hero-img {
+    position: absolute;
+    top: 0; left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;           /* imagem atrás do texto */
+}
+
+.botao-cta {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 10px 20px;
+    background-color: #00796b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background 0.3s ease;
+}
+.botao-cta:hover {
+    background-color: #005f53;
+}
+
+/* === Conteúdo === */
+main {
+    padding: 20px;
+}
+main h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #19354a;
+}
+.ponto {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    list-style: disc;
+    padding-left: 20px;
+    margin-top: 10px;
+}
+
+/* Seções Suítes e Lazer */
+.suites, .lazer {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.suite, .espaco {
+    background: #fff;
+    border-radius: 6px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+    max-width: 300px;
+    text-align: center;
+    overflow: hidden;
+    transition: transform 0.2s;
+}
+
+.suite:hover, .espaco:hover {
+    transform: scale(1.03);
+}
+
+.suite img, .espaco img {
+    width: 100%;
+    height: 180px;
+    object-fit: cover;
+}
+
+.suite h3, .espaco h3 {
+    margin: 10px 0;
+    color: #19354a;
+}
+
+.suite p, .espaco p {
+    padding: 0 10px 15px;
+    font-size: 0.9rem;
+    color: #555;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+    .suites, .lazer {
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+
+/* === Galeria === */
+.galeria {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    justify-content: center;
+    margin: 15px 0;
+}
+.galeria img {
+    width: 250px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 6px;
+}
+
+/* === Depoimentos === */
+blockquote {
+    margin: 10px auto;
+    padding: 10px 20px;
+    border-left: 4px solid #00796b;
+    background: #fff;
+    max-width: 600px;
+}
+
+/* === Formulário === */
+form {
+    max-width: 400px;
+    margin: 0 auto;
+}
+.form-grupo {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+}
+form label {
+    margin-bottom: 5px;
+}
+form input, form button {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+form button {
+    background-color: #00796b;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+form button:hover {
+    background-color: #005f53;
+}
+.simular button {
+    align-items: center;
+    margin-top: 20px;
+}
+
+/* === Rodapé === */
+.rodape {
+    display: flex;
+    flex-direction: column;      /* coluna em vez de linha */
+    align-items: center;         /* centraliza horizontalmente */
+    background-color: #19354a;
+    color: #D0AC60;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.rodape-conteudo {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    width: 100%;
+    margin-bottom: 15px;         /* espaço antes do copyright */
+}
+
+.rodape-copy {
+    width: 100%;
+    border-top: 1px solid rgba(208,172,96,0.4); /* opcional: linha separadora */
+    padding-top: 10px;
+    font-size: 0.9rem;
+}
+
+.rodape h2 {
+    margin-bottom: 10px;
+}
+.rodape a {
+    color: #D0AC60;
+    text-decoration: none;
+}
+.rodape a:hover {
+    color: #fff;
+    text-decoration: underline;
+}
+.contato {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    margin: 10px 0;
+}
+.social-icons {
+    margin: 15px 0;
+}
+.social-icons a img {
+    margin: 0 5px;
+    transition: transform 0.2s;
+}
+.social-icons a img:hover {
+    transform: scale(1.1);
+}
+
+.localizacao iframe {
+    width: 100px;
+    height: 225px;
+    border: 0;
+    border-radius: 6px;
+    margin-top: 10px;
+}
+
+/* === Responsividade === */
+@media (max-width: 768px) {
+    .menu ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+    .ponto {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+    .hero-texto h2 {
+        font-size: 1.2rem;
+    }
+}
+
+#resultado {
+    text-align: center;   /* centraliza o texto horizontalmente */
+    margin-top: 20px;     /* espaço superior para separar do formulário */
+    font-weight: bold;    /* opcional: deixa o texto em negrito */
+    font-size: 1.1rem;    /* opcional: aumenta um pouco a fonte */
+    color: #19354a;       /* opcional: cor para combinar com o tema */
+}
+/* Estilo para mensagens de erro */
+#error {
+    color: red;
+    font-weight: bold;
+    margin-top: 10px;
+    text-align: center;
+}

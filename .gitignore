@@ -1,0 +1,9 @@
+@"
+# IntelliJ / JetBrains
+.idea/
+*.iml
+
+# SO
+Thumbs.db
+.DS_Store
+"@ | Out-File -Encoding utf8 .gitignore

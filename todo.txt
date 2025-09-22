@@ -1,0 +1,16 @@
+- Adicionar a logo do Oasis a Header;
+- Procurar uma fonte mais bonitinha;
+- Adicionar fotos:
+    - ao banner Hero;
+    - à seção de suítes;
+    - à seção de área de lazer:
+        - piscina
+        - churrasqueira;
+        - sauna;
+        - área de lazer.
+- Ajustar a seção de serviços para que seja algo que reflita melhor a realidade do empreendimento;
+- Ajustar a seção de suítes para que reflita de maneira fidedigna a descrição de todos os quartos;
+- Procurar depoimentos de hóspedes anteriores (avaliações do Airbnb);
+- Integrar Formspree para ter maior controle sobre os dados de feedback e pessoas interessadas no aluguel do imóvel;
+- Adicionar dados da casa (número de quartos, suítes, banheiros, sala, etc.)
+- Pedir sugestões do que adicionar ao dedé e a mamãe

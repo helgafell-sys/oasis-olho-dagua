@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oasis Olho d'Água - Refúgio de tranquilidade e beleza natural em São Luís.">
+    <title>Oasis Olho d'Água</title>
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="oasis.css">
+</head>
+
+<body>
+    <!-- ===== CABEÇALHO ===== -->
+    <header class="cabecalho">
+        <h1>Bem-vindo ao Oasis Olho d'Água</h1>
+        <nav class="menu">
+            <ul>
+                <li><a href="#sobre">Sobre Nós</a></li>
+                <li><a href="#servicos">Serviços</a></li>
+                <li><a href="#suites">Suítes</a></li>
+                <li><a href="#lazer">Área de Lazer</a></li>
+                <li><a href="#galeria">Galeria</a></li>
+                <li><a href="#depoimentos">Depoimentos</a></li>
+                <li><a href="#simular">Simulação</a></li>
+                <li><a href="#localizacao">Localização</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- ===== HERO / BANNER ===== -->
+    <section class="hero">
+        <img src="media/hero.jpg" alt="Vista panorâmica do Oasis Olho d'Água" class="hero-img">
+        <div class="hero-texto">
+            <h2>Descubra seu refúgio em São Luís</h2>
+            <a href="#simular" class="botao-cta">Reserve Agora</a>
+        </div>
+    </section>
+
+    <!-- ===== CONTEÚDO PRINCIPAL ===== -->
+    <main>
+        <section id="sobre">
+            <h2>Sobre Nós</h2>
+            <p>Oasis Olho d'Água é um refúgio de tranquilidade e beleza natural, oferecendo uma experiência única
+                para nossos visitantes.</p>
+        </section>
+
+        <section id="servicos">
+            <h2>Serviços</h2>
+            <ul class="ponto">
+                <li>Hospedagem confortável</li>
+                <li>Atividades ao ar livre</li>
+                <li>Gastronomia local</li>
+            </ul>
+        </section>
+
+        <!-- Seção Suítes -->
+        <section id="suites">
+            <h2>Suítes</h2>
+            <div class="suites">
+                <article class="suite">
+                    <img src="media/suite1.jpg" alt="Suíte principal com cama king size">
+                    <h3>Suíte Master</h3>
+                    <p>Ampla suíte com cama king size, ar-condicionado, varanda com vista e banheiro privativo.</p>
+                </article>
+                <article class="suite">
+                    <img src="media/suite2.jpg" alt="Suíte com duas camas de solteiro">
+                    <h3>Suíte Família</h3>
+                    <p>Ideal para famílias, equipada com duas camas de solteiro, TV e banheiro completo.</p>
+                </article>
+                <article class="suite">
+                    <img src="media/suite3.jpg" alt="Suíte aconchegante com decoração moderna">
+                    <h3>Suíte Conforto</h3>
+                    <p>Suíte aconchegante com decoração moderna, cama queen size e iluminação natural.</p>
+                </article>
+            </div>
+        </section>
+
+        <!-- Seção Área de Lazer -->
+        <section id="lazer">
+            <h2>Área de Lazer</h2>
+            <div class="lazer">
+                <article class="espaco">
+                    <img src="media/piscina.jpg" alt="Piscina com espreguiçadeiras">
+                    <h3>Piscina</h3>
+                    <p>Piscina ampla para momentos de diversão e relaxamento, equipada com espreguiçadeiras.</p>
+                </article>
+                <article class="espaco">
+                    <img src="media/churrasqueira.jpg" alt="Área de churrasqueira completa">
+                    <h3>Churrasqueira</h3>
+                    <p>Espaço gourmet com churrasqueira, mesa grande e ambiente perfeito para confraternizações.</p>
+                </article>
+                <article class="espaco">
+                    <img src="media/sauna.jpg" alt="Sauna relaxante a vapor">
+                    <h3>Sauna</h3>
+                    <p>Sauna relaxante para momentos de bem-estar, ideal para revitalizar corpo e mente.</p>
+                </article>
+            </div>
+        </section>
+
+        <section id="galeria">
+            <h2>Galeria</h2>
+            <div class="galeria">
+                <img src="media/foto1.jpg" alt="Piscina do Oasis">
+                <img src="media/foto2.jpg" alt="Área de descanso">
+                <img src="media/foto3.jpg" alt="Vista do jardim">
+            </div>
+        </section>
+
+        <section id="depoimentos">
+            <h2>Depoimentos</h2>
+            <blockquote>
+                “Lugar maravilhoso! Atendimento impecável.” – Maria S.
+            </blockquote>
+            <blockquote>
+                “Voltarei com certeza, ótima gastronomia e tranquilidade.” – João P.
+            </blockquote>
+        </section>
+
+        <section id="simular">
+            <h2>Simulação de Reserva</h2>
+            <form id="reservaForm">
+                <div class="form-grupo">
+                    <label for="tipo">Tipo de Locação:</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecione</option>
+                        <option value="evento">Evento</option>
+                        <option value="temporada">Temporada</option>
+                    </select>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="checkin">Data de Check-in:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="checkout">Data de Check-out:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="hospedes">Número de Hóspedes:</label>
+                    <input type="number" id="hospedes" name="hospedes" min="1" required>
+                </div>
+
+                <center>
+                    <button type="submit">Simular Reserva</button>
+                </center>
+            </form>
+
+            <p id="resultado"></p>
+        </section>
+    </main>
+
+    <!-- ===== RODAPÉ ===== -->
+    <footer class="rodape">
+        <div class="rodape-conteudo">
+            <section class="contato-info">
+                <h2>Contato</h2>
+
+                <div class="contato">
+                    <img src="media/whatsapp.png" alt="WhatsApp" width="20" height="20">
+                    <p>
+                        WhatsApp:
+                        <a href="https://api.whatsapp.com/send/?phone=5598992052009&text=Olá..." target="_blank"
+                            rel="noopener noreferrer">(98) 99205-2005</a>
+                    </p>
+                </div>
+
+                <div class="contato">
+                    <img src="media/airbnb.png" alt="Airbnb" width="20" height="20">
+                    <p>
+                        Airbnb:
+                        <a href="https://www.airbnb.com.br/rooms/1083246934633393018" target="_blank"
+                            rel="noopener noreferrer">Reserve aqui</a>
+                    </p>
+                </div>
+
+                <div class="social-icons">
+                    <a href="https://instagram.com/oasis" target="_blank" rel="noopener noreferrer">
+                        <img src="media/instagram.png" alt="Instagram" width="24"> Instagram
+                    </a>
+                </div>
+            </section>
+
+            <section id="localizacao">
+                <h2>Como Chegar</h2>
+                <iframe
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3986.070644025794!2d-44.2293329!3d-2.4835683!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7f69260a3bea0a1%3A0xdfce3b0232a5c0cb!2sR.%20C%C3%B4nsul%20Adelino%20Silva%2C%2014%20-%20Olho%20D&#39;agua%2C%20S%C3%A3o%20Lu%C3%ADs%20-%20MA%2C%2065065-270!5e0!3m2!1spt-BR!2sbr!4v1758505468185!5m2!1spt-BR!2sbr"
+                    allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </section>
+        </div>
+
+        <div class="rodape-copy">
+            <p>&copy; 2024 Oasis Olho d'Água. Todos os direitos reservados.</p>
+        </div>
+    </footer>
+
+    <!-- ===== SCRIPT DE SIMULAÇÃO ===== -->
+    <script>
+        function contarFinsDeSemana(inicio, fim) {
+            let count = 0;
+            // cria cópias zerando horas para evitar problemas de fuso
+            let d = new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate());
+            const end = new Date(fim.getFullYear(), fim.getMonth(), fim.getDate());
+
+            while (d < end) {
+                const dia = d.getDay(); // 0 = domingo, 6 = sábado
+                if (dia === 0 || dia === 6) count++;
+                d.setDate(d.getDate() + 1);
+            }
+            return count;
+        }
+
+        document.getElementById('reservaForm').addEventListener('submit', function (e) {
+            e.preventDefault();
+
+            const tipo = document.getElementById('tipo').value;
+            const checkin = new Date(document.getElementById('checkin').value);
+            const checkout = new Date(document.getElementById('checkout').value);
+            const hospedes = parseInt(document.getElementById('hospedes').value, 10);
+
+            if (!tipo) {
+                alert("Selecione o tipo de locação.");
+                return;
+            }
+
+            if (checkout <= checkin) {
+                alert("A data de check-out deve ser após o check-in.");
+                return;
+            }
+
+            const msPorDia = 1000 * 60 * 60 * 24;
+            const dias = Math.round((checkout - checkin) / msPorDia); // arredonda para inteiro
+
+            let valorDiaria = 0;
+
+            if (tipo === "evento") {
+                valorDiaria = hospedes > 30 ? 2750 : 2250;
+            } else if (tipo === "temporada") {
+                if (hospedes > 15) {
+                    // NOVA MENSAGEM PARA MAIS DE 15 HÓSPEDES
+                    alert(
+                        "Quantidade de hóspedes desejada excede o limite comportado pelo nosso serviço.\n" +
+                        "Por favor, entrar em contato por algum dos métodos listados abaixo."
+                    );
+                    return;
+                }
+                valorDiaria = 1750;
+
+                const diasFimSemana = contarFinsDeSemana(checkin, checkout);
+                const diasUteis = dias - diasFimSemana;
+                const total = diasUteis * valorDiaria + diasFimSemana * 4000;
+
+                document.getElementById('resultado').textContent =
+                    `Tipo: ${tipo}. ${dias} diárias (${diasFimSemana} fim de semana). Valor estimado: R$ ${total.toFixed(2)}.`;
+                return;
+            }
+
+            const total = dias * valorDiaria;
+            document.getElementById('resultado').textContent =
+                `Tipo: ${tipo}. Reserva de ${dias} diárias para ${hospedes} hóspede(s). Valor estimado: R$ ${total.toFixed(2)}.`;
+        });
+    </script>
+
+</body>
+
+</html>
