@@ -1,5 +1,5 @@
 - Adicionar a logo do Oasis a Header;
-- Procurar uma fonte mais bonitinha;
+- Procurar uma fonte mais bonitinha (notas do celular);
 - Adicionar fotos:
     - ao banner Hero;
     - à seção de suítes;
