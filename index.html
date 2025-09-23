@@ -1,20 +1,27 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="pt-BR">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Oasis Olho d'Água - Refúgio de tranquilidade e beleza natural em São Luís.">
     <title>Oasis Olho d'Água</title>
+
     <link rel="icon" href="media/favicon.ico" type="image/x-icon">
     <link rel="stylesheet" href="oasis.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <!-- ===== CABEÇALHO ===== -->
     <header class="cabecalho">
-        <h1>Bem-vindo ao Oasis Olho d'Água</h1>
-        <nav class="menu">
+        <h1>Oasis Olho d'Água</h1>
+        <button class="menu-toggle" aria-label="Abrir/fechar menu">&#9776;</button>
+        <nav class="menu" role="navigation">
             <ul>
                 <li><a href="#sobre">Sobre Nós</a></li>
                 <li><a href="#servicos">Serviços</a></li>
@@ -22,23 +29,23 @@
                 <li><a href="#lazer">Área de Lazer</a></li>
                 <li><a href="#galeria">Galeria</a></li>
                 <li><a href="#depoimentos">Depoimentos</a></li>
-                <li><a href="#simular">Simulação</a></li>
                 <li><a href="#localizacao">Localização</a></li>
+                <li><a src="http://127.0.0.1:5500/pagina-login.html" href="http://127.0.0.1:5500/pagina-login.html" target="_blank">Área do Locador</a></li>
             </ul>
         </nav>
     </header>
 
     <!-- ===== HERO / BANNER ===== -->
     <section class="hero">
-        <img src="media/hero.jpg" alt="Vista panorâmica do Oasis Olho d'Água" class="hero-img">
+        <img src="media/garagem-fachada.jpg" alt="Vista panorâmica do Oasis Olho d'Água" class="hero-img">
         <div class="hero-texto">
             <h2>Descubra seu refúgio em São Luís</h2>
-            <a href="#simular" class="botao-cta">Reserve Agora</a>
+            <a href="https://www.airbnb.com.br/rooms/1083246934633393018" class="botao-cta" target="_blank">Reserve Agora</a>
         </div>
     </section>
 
     <!-- ===== CONTEÚDO PRINCIPAL ===== -->
-    <main>
+    <main role="main">
         <section id="sobre">
             <h2>Sobre Nós</h2>
             <p>Oasis Olho d'Água é um refúgio de tranquilidade e beleza natural, oferecendo uma experiência única
@@ -59,18 +66,28 @@
             <h2>Suítes</h2>
             <div class="suites">
                 <article class="suite">
-                    <img src="media/suite1.jpg" alt="Suíte principal com cama king size">
+                    <img src="media/suite-master.jpg" alt="Suíte principal com cama king size e varanda com vista">
                     <h3>Suíte Master</h3>
                     <p>Ampla suíte com cama king size, ar-condicionado, varanda com vista e banheiro privativo.</p>
                 </article>
                 <article class="suite">
-                    <img src="media/suite2.jpg" alt="Suíte com duas camas de solteiro">
-                    <h3>Suíte Família</h3>
-                    <p>Ideal para famílias, equipada com duas camas de solteiro, TV e banheiro completo.</p>
+                    <img src="media/suite1.jpg" alt="Suíte 1 com cama queen size e iluminação natural">
+                    <h3>Suíte 1</h3>
+                    <p>Suíte aconchegante com decoração moderna, cama queen size e iluminação natural.</p>
                 </article>
                 <article class="suite">
-                    <img src="media/suite3.jpg" alt="Suíte aconchegante com decoração moderna">
-                    <h3>Suíte Conforto</h3>
+                    <img src="media/suite2.jpg" alt="Suíte 2 com cama queen size e decoração moderna">
+                    <h3>Suíte 2</h3>
+                    <p>Suíte aconchegante com decoração moderna, cama queen size e iluminação natural.</p>
+                </article>
+                <article class="suite">
+                    <img src="media/suite3.jpg" alt="Suíte 3 com cama queen size e decoração moderna">
+                    <h3>Suíte 3</h3>
+                    <p>Suíte aconchegante com decoração moderna, cama queen size e iluminação natural.</p>
+                </article>
+                <article class="suite">
+                    <img src="media/suite4-1.jpg" alt="Suíte 4 com cama queen size e decoração moderna">
+                    <h3>Suíte 4</h3>
                     <p>Suíte aconchegante com decoração moderna, cama queen size e iluminação natural.</p>
                 </article>
             </div>
@@ -81,17 +98,17 @@
             <h2>Área de Lazer</h2>
             <div class="lazer">
                 <article class="espaco">
-                    <img src="media/piscina.jpg" alt="Piscina com espreguiçadeiras">
+                    <img src="media/piscina.jpg" alt="Piscina ampla com espreguiçadeiras para relaxamento">
                     <h3>Piscina</h3>
                     <p>Piscina ampla para momentos de diversão e relaxamento, equipada com espreguiçadeiras.</p>
                 </article>
                 <article class="espaco">
-                    <img src="media/churrasqueira.jpg" alt="Área de churrasqueira completa">
+                    <img src="media/area-lazer1.jpg" alt="Área gourmet com churrasqueira e mesa grande">
                     <h3>Churrasqueira</h3>
                     <p>Espaço gourmet com churrasqueira, mesa grande e ambiente perfeito para confraternizações.</p>
                 </article>
                 <article class="espaco">
-                    <img src="media/sauna.jpg" alt="Sauna relaxante a vapor">
+                    <img src="media/sauna.jpg" alt="Sauna a vapor para relaxar e revitalizar corpo e mente">
                     <h3>Sauna</h3>
                     <p>Sauna relaxante para momentos de bem-estar, ideal para revitalizar corpo e mente.</p>
                 </article>
@@ -101,9 +118,10 @@
         <section id="galeria">
             <h2>Galeria</h2>
             <div class="galeria">
-                <img src="media/foto1.jpg" alt="Piscina do Oasis">
-                <img src="media/foto2.jpg" alt="Área de descanso">
-                <img src="media/foto3.jpg" alt="Vista do jardim">
+                <img src="media/sala-jantar.jpg" alt="Sala de jantar ampla e bem iluminada">
+                <img src="media/sala-terreo.jpg" alt="Sala de estar aconchegante com sofás confortáveis">
+                <img src="media/area-jardim2.jpg" alt="Área de descanso com jardim e cadeiras">
+                <img src="media/cozinha1-2.jpg" alt="Cozinha completa e bem equipada">
             </div>
         </section>
 
@@ -115,41 +133,6 @@
             <blockquote>
                 “Voltarei com certeza, ótima gastronomia e tranquilidade.” – João P.
             </blockquote>
-        </section>
-
-        <section id="simular">
-            <h2>Simulação de Reserva</h2>
-            <form id="reservaForm">
-                <div class="form-grupo">
-                    <label for="tipo">Tipo de Locação:</label>
-                    <select id="tipo" name="tipo" required>
-                        <option value="">Selecione</option>
-                        <option value="evento">Evento</option>
-                        <option value="temporada">Temporada</option>
-                    </select>
-                </div>
-
-                <div class="form-grupo">
-                    <label for="checkin">Data de Check-in:</label>
-                    <input type="date" id="checkin" name="checkin" required>
-                </div>
-
-                <div class="form-grupo">
-                    <label for="checkout">Data de Check-out:</label>
-                    <input type="date" id="checkout" name="checkout" required>
-                </div>
-
-                <div class="form-grupo">
-                    <label for="hospedes">Número de Hóspedes:</label>
-                    <input type="number" id="hospedes" name="hospedes" min="1" required>
-                </div>
-
-                <center>
-                    <button type="submit">Simular Reserva</button>
-                </center>
-            </form>
-
-            <p id="resultado"></p>
         </section>
     </main>
 
@@ -196,10 +179,8 @@
             <p>&copy; 2024 Oasis Olho d'Água. Todos os direitos reservados.</p>
         </div>
     </footer>
-
     <!-- ===== SCRIPT DE SIMULAÇÃO ===== -->
     <script src="script.js"></script>
-
 </body>
 
 </html>

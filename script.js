@@ -1,3 +1,13 @@
+
+const toggleBtn = document.querySelector('.menu-toggle');
+const menuList = document.querySelector('.menu ul');
+
+toggleBtn.addEventListener('click', () => {
+    menuList.classList.toggle('show');
+});
+
+
+
 function contarFinsDeSemana(inicio, fim) {
     let count = 0;
     let d = new Date(inicio.getFullYear(), inicio.getMonth(), inicio.getDate());

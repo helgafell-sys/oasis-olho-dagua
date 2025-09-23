@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Oasis Olho d'Água - Refúgio de tranquilidade e beleza natural em São Luís.">
+    <title>Área do Locador</title>
+
+    <link rel="icon" href="media/favicon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="oasis.css">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Baskervville:ital,wght@0,400..700;1,400..700&display=swap"
+        rel="stylesheet">
+</head>
+
+<body>
+    <header class="cabecalho">
+        <h1>Oasis Olho d'Água</h1>
+        <button class="menu-toggle" aria-label="Menu">&#9776;</button>
+        <nav class="menu">
+            <ul>
+                <li><a href="index.html">Páginal Inicial</a></li>
+                <li><a href="pagina-locador.html">Simulação</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <body>
+        <h1>Bem-vindo à Área do Locador</h1>
+        <p>Esta seção é dedicada aos locadores que desejam gerenciar suas propriedades e acompanhar suas reservas.</p>
+        <p>Aqui você pode:</p>
+        <ul>
+            <li>Adicionar novas propriedades</li>
+            <li>Simular novos contratos</li>
+            <li>Editar detalhes das propriedades existentes</li>
+            <li>Visualizar e gerenciar reservas</li>
+            <li>Comunicar-se com os locatários</li>
+        </ul>
+        <p>Para começar, faça login na sua conta de locador ou registre-se se ainda não tiver uma.</p>
+        <section id="simular">
+            <h2>Simulação de Reserva</h2>
+            <form id="reservaForm">
+                <div class="form-grupo">
+                    <label for="tipo">Tipo de Locação:</label>
+                    <select id="tipo" name="tipo" required>
+                        <option value="">Selecione</option>
+                        <option value="evento">Evento</option>
+                        <option value="temporada">Temporada</option>
+                    </select>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="checkin">Data de Check-in:</label>
+                    <input type="date" id="checkin" name="checkin" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="checkout">Data de Check-out:</label>
+                    <input type="date" id="checkout" name="checkout" required>
+                </div>
+
+                <div class="form-grupo">
+                    <label for="hospedes">Número de Hóspedes:</label>
+                    <input type="number" id="hospedes" name="hospedes" min="1" required>
+                </div>
+
+                <center>
+                    <button type="submit">Simular Reserva</button>
+                </center>
+            </form>
+
+            <p id="resultado"></p>
+            <p class="error" id="errorMsg"></p>
+        </section>
+    </body>
+    <footer class="rodape">
+        <p>&copy; 2024 Oasis Olho D'Água. Todos os direitos reservados.</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
